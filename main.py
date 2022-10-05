@@ -11,3 +11,4 @@ if response.status_code != 200:
 else:
   soup = BeautifulSoup(response.text, "html.parser")
   jops = soup.find_all('li', class_="feature")
+  print(jops)
